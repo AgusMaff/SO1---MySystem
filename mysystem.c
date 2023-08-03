@@ -15,7 +15,7 @@ int mysystem(char* program, char** opt){
             }
             break;
         case -1:
-            fprintf(stderr,"Hubo un fallo durante la creacion del proceso hijo encargador de la ejecucion del comando. %d:%s\n", errno, strerror(errno));
+            fprintf(stderr,"Hubo un fallo durante la creacion del proceso hijo encargado de la ejecucion del comando. %d:%s\n", errno, strerror(errno));
             break;
         default:
             signal(SIGINT,SIG_IGN);
